@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pozycja zawsze szara">
+  <meta name="color-scheme" content="light dark">
+  <title>MenuAddDisabled · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html" aria-current="page">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading doc-heading">
+    <div class="doc-heading-copy">
+      <a class="eyebrow" href="index.html">Menu</a>
+      <h1>MenuAddDisabled</h1>
+      <p>Pozycja zawsze szara</p>
+    </div>
+    <nav class="entry-navigation" aria-label="Nawigacja między wpisami"><a rel="prev" href="menuadd.html" title="MenuAdd">Poprzedni wpis</a><a rel="next" href="menuaddmenu.html" title="MenuAddMenu">Następny wpis</a></nav>
+  </header><section class="doc-section" id="skladnia"><h2>Składnia</h2><div class="code-block">
+    <div class="code-toolbar"><span>xwgui.h</span>
+      <button type="button" class="copy-button" data-copy="code-syntax" aria-label="Kopiuj kod" title="Kopiuj kod" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+      </button>
+    </div>
+    <pre tabindex="0"><code id="code-syntax" class="language-c">void  MenuAddDisabled( Menu *menu, const char *text );</code></pre>
+  </div></section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ustawienia, daty i pliki w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Ustawienia, daty i pliki · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html" aria-current="page">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Ustawienia, daty i pliki</h1></header><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-D">D</a><a href="#letter-F">F</a><a href="#letter-S">S</a><a href="#letter-T">T</a></nav><section id="letter-D" class="letter-group">
+    <h2>D</h2>
+    <div><a class="entry-row" href="dateyear.html"><div><h3>DateYear</h3><p>Bieżący rok według czasu lokalnego</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="dircreate.html"><div><h3>DirCreate</h3><p>Tworzy katalog (ścieżka w UTF-8); T tylko wtedy, gdy powstał nowy</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a></div>
+  </section>
+<section id="letter-F" class="letter-group">
+    <h2>F</h2>
+    <div><a class="entry-row" href="fileexecute.html"><div><h3>FileExecute</h3><p>Otwiera plik w programie, który system ma dla jego rodzaju, np. PDF w przeglądarce PDF; plik programu (.exe, .bat) uruchamia się, więc nie podajemy tu plików z niepewnego źródła</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="fileexists.html"><div><h3>FileExists</h3><p>T, gdy pod ścieżką (w UTF-8) jest zwykły plik; katalog albo urządzenie dają F</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="fileopendialog.html"><div><h3>FileOpenDialog</h3><p>Wybór istniejącego pliku; filters jak &quot;Pliki tekstowe|*.txt|Wszystkie pliki|*.*&quot;, &quot;&quot; bez filtrów; path podaje plik na start (&quot;&quot; bez niego) i dostaje wybrany plik; title &quot;&quot; daje tytuł systemu; F po rezygnacji albo gdy wybrany plik nie mieści się w size bajtach</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="filesavedialog.html"><div><h3>FileSaveDialog</h3><p>Wybór pliku do zapisu jak w FileOpenDialog(); nazwa bez rozszerzenia dostaje rozszerzenie pierwszego filtra, a istniejący plik wymaga potwierdzenia nadpisania</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a></div>
+  </section>
+<section id="letter-S" class="letter-group">
+    <h2>S</h2>
+    <div><a class="entry-row" href="set.html"><div><h3>Set</h3><p>Ustawia nową wartość ustawienia i zwraca poprzednią, ważną do następnego wywołania</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a></div>
+  </section>
+<section id="letter-T" class="letter-group">
+    <h2>T</h2>
+    <div><a class="entry-row" href="timeractive.html"><div><h3>TimerActive</h3><p>T, gdy timer działa</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="timercreate.html"><div><h3>TimerCreate</h3><p>Zatrzymany timer okna; po TimerStart() akcja działa co interval milisekund i dostaje timer i dane data; okno zatrzymuje swoje timery, gdy się zamyka</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="timerinterval.html"><div><h3>TimerInterval</h3><p>Odstęp w milisekundach</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="timersetinterval.html"><div><h3>TimerSetInterval</h3><p>Odstęp w milisekundach; działający timer idzie dalej z nowym odstępem</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="timerstart.html"><div><h3>TimerStart</h3><p>Uruchamia timer</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="timerstop.html"><div><h3>TimerStop</h3><p>Zatrzymuje timer</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

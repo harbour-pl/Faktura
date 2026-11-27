@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aplikacja i okna w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Aplikacja i okna · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html" aria-current="page">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Aplikacja i okna</h1></header><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-A">A</a><a href="#letter-D">D</a><a href="#letter-M">M</a><a href="#letter-W">W</a></nav><section id="letter-A" class="letter-group">
+    <h2>A</h2>
+    <div><a class="entry-row" href="apparg.html"><div><h3>AppArg</h3><p>Argument programu w UTF-8; 0 to sam program, brak argumentu daje &quot;&quot;</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="appcreate.html"><div><h3>AppCreate</h3><p>Tworzy aplikację: instancję programu i klasy okien</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="appdestroy.html"><div><h3>AppDestroy</h3><p>Niszczy główne okno, jeśli jeszcze istnieje, i zwalnia aplikację</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="apprun.html"><div><h3>AppRun</h3><p>Pokazuje główne okno i obsługuje komunikaty, dopóki się nie zamknie; zwraca kod wyjścia, -1 dla okna innej aplikacji albo gdy pętla już działa</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+<section id="letter-D" class="letter-group">
+    <h2>D</h2>
+    <div><a class="entry-row" href="dialogcreate.html"><div><h3>DialogCreate</h3><p>Tworzy ukryte okno dialogowe na środku okna owner, z obszarem roboczym width x height pikseli logicznych; NULL dla rozmiaru mniejszego od 1</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="dialogend.html"><div><h3>DialogEnd</h3><p>Kończy DialogShowModal() z wynikiem result</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="dialogshowmodal.html"><div><h3>DialogShowModal</h3><p>Pokazuje okno dialogowe, blokuje okno właściciela i czeka na koniec okna; potem okno znika razem ze swoimi kontrolkami; zwraca wynik z DialogEnd(), 0 po zamknięciu okna bez DialogEnd()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+<section id="letter-M" class="letter-group">
+    <h2>M</h2>
+    <div><a class="entry-row" href="msgerror.html"><div><h3>MsgError</h3><p>Okno błędu z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="msginfo.html"><div><h3>MsgInfo</h3><p>Okno informacji z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="msgwarning.html"><div><h3>MsgWarning</h3><p>Okno ostrzeżenia z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="msgyesno.html"><div><h3>MsgYesNo</h3><p>Pytanie z przyciskami Tak i Nie; title &quot;&quot; bierze tytuł aktywnego okna; T dla Tak</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+<section id="letter-W" class="letter-group">
+    <h2>W</h2>
+    <div><a class="entry-row" href="winbackground.html"><div><h3>WinBackground</h3><p>Kolor tła okna 0xRRGGBB, -1 dla koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="wincenter.html"><div><h3>WinCenter</h3><p>Ustawia okno na środku obszaru roboczego jego ekranu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winclose.html"><div><h3>WinClose</h3><p>Zamyka okno jak przycisk zamknięcia, po zgodzie z WinSetOnClose(); zamknięcie głównego okna kończy AppRun()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="wincreate.html"><div><h3>WinCreate</h3><p>Tworzy ukryte okno z obszarem roboczym width x height pikseli logicznych; pierwsze okno aplikacji jest głównym; NULL dla rozmiaru mniejszego od 1</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winfocusnext.html"><div><h3>WinFocusNext</h3><p>Przenosi fokus do następnej kontrolki w kolejności Tab, z previous do poprzedniej</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winforeground.html"><div><h3>WinForeground</h3><p>Kolor tekstu okna 0xRRGGBB, -1 dla koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winheight.html"><div><h3>WinHeight</h3><p>Wysokość obszaru roboczego w pikselach logicznych</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winhide.html"><div><h3>WinHide</h3><p>Ukrywa okno bez zamykania</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winremovecontextmenu.html"><div><h3>WinRemoveContextMenu</h3><p>Okno bez menu podręcznego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winremovekey.html"><div><h3>WinRemoveKey</h3><p>Usuwa klawisz z WinSetKey()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetbackground.html"><div><h3>WinSetBackground</h3><p>Kolor tła okna 0xRRGGBB, -1 wraca do koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetcontextmenu.html"><div><h3>WinSetContextMenu</h3><p>Menu podręczne okna z MenuCreatePopup(), otwierane prawym przyciskiem myszy albo klawiszem menu, także nad kontrolkami bez własnego menu podręcznego; jego polecenia działają jak polecenia paska menu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetforeground.html"><div><h3>WinSetForeground</h3><p>Kolor tekstu etykiet, ramek, pól wyboru i przycisków opcji okna 0xRRGGBB bez własnego koloru; -1 wraca do koloru systemowego; pola edycji zachowują swoje kolory</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetheight.html"><div><h3>WinSetHeight</h3><p>Nowa wysokość obszaru roboczego w pikselach logicznych; wartość mniejsza od 1 nic nie zmienia</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winseticon.html"><div><h3>WinSetIcon</h3><p>Ikona okna z pliku .ico (ścieżka w UTF-8); brak pliku zostawia ikonę programu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetkey.html"><div><h3>WinSetKey</h3><p>Akcja pod klawiszem key w oknie i w jego kontrolkach, jak SetKey(); klawisz jak w MenuAdd() (&quot;PgDn&quot;, &quot;Esc&quot;, &quot;Enter&quot;, &quot;Ctrl+S&quot;); ma pierwszeństwo przed skrótami menu i pasków, ale czeka w czasie WinReadModal(); klawisz już ustawiony dostaje nową akcję; F dla nieznanego klawisza</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetmenu.html"><div><h3>WinSetMenu</h3><p>Pasek menu okna; okno rośnie, żeby obszar roboczy zachował rozmiar</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetonclose.html"><div><h3>WinSetOnClose</h3><p>Zgoda na zamknięcie okna przyciskiem zamknięcia, Alt+F4 albo WinClose(): valid dostaje okno i dane data, a F zostawia okno otwarte, np. po pytaniu MsgYesNo()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetonresize.html"><div><h3>WinSetOnResize</h3><p>Akcja po zmianie rozmiaru obszaru roboczego; nowy rozmiar dają WinWidth() i WinHeight()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetsizable.html"><div><h3>WinSetSizable</h3><p>Pozwala zmieniać rozmiar okna myszą i pokazać je na całym ekranie; obszar roboczy zachowuje rozmiar, a kontrolki idą za swoimi kotwicami</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetstate.html"><div><h3>WinSetState</h3><p>Stan okna WIN_NORMAL, WIN_MAXIMIZED, WIN_MINIMIZED albo WIN_FULLSCREEN; ukryte okno pokaże się w tym stanie; zwraca poprzedni stan</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsettitle.html"><div><h3>WinSetTitle</h3><p>Nowy tytuł okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsetwidth.html"><div><h3>WinSetWidth</h3><p>Nowa szerokość obszaru roboczego w pikselach logicznych; wartość mniejsza od 1 nic nie zmienia</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winshow.html"><div><h3>WinShow</h3><p>Pokazuje okno w jego stanie (normalne, zmaksymalizowane, zminimalizowane, pełny ekran)</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winsizable.html"><div><h3>WinSizable</h3><p>T, gdy użytkownik może zmieniać rozmiar okna myszą i pokazać je na całym ekranie</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="wintitle.html"><div><h3>WinTitle</h3><p>Tytuł okna w UTF-8, ważny do następnej zmiany tytułu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="winwidth.html"><div><h3>WinWidth</h3><p>Szerokość obszaru roboczego w pikselach logicznych</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

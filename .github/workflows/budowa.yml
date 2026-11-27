@@ -1,0 +1,21 @@
+# Budowa XWGUI i xRDD w Windows, w MSYS2 clang64 jak u autorki (NOTATKI.md); GitHub buduje po każdym push i pull request
+name: Budowa
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: CLANG64
+          install: make mingw-w64-clang-x86_64-clang
+      - run: make
+      - run: make example

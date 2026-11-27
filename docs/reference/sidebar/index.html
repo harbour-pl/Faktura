@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pasek boczny w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Pasek boczny · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html" aria-current="page">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Pasek boczny</h1></header><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-S">S</a></nav><section id="letter-S" class="letter-group">
+    <h2>S</h2>
+    <div><a class="entry-row" href="sidebaraddaction.html"><div><h3>SidebarAddAction</h3><p>Przycisk z prawej strony nagłówka strony page, widoczny razem ze stroną, z podpowiedzią toolTip (&quot;&quot; bez niej); akcja dostaje pasek i dane data</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebaraddbutton.html"><div><h3>SidebarAddButton</h3><p>Nowa strona: ikona na pasku obrazków i panel pod nagłówkiem; klik na ikonie pokazuje panel, klik na ikonie pokazanej strony go ukrywa; title to nazwa strony w nagłówku, w podpowiedzi ikony i w menu paska, shortcut jak w MenuAdd(); panel z SidebarPanel() bierze kontrolki, sekcje, listę albo menu; zwraca numer strony od 1</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebaraddglobal.html"><div><h3>SidebarAddGlobal</h3><p>Przycisk na dole paska obrazków, np. ustawienia, z podpowiedzią toolTip (&quot;&quot; bez niej); akcja dostaje pasek i dane data</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebaradditem.html"><div><h3>SidebarAddItem</h3><p>Nowy wiersz listy strony page, jak na liście rozszerzeń: obrazek z lewej, tytuł pogrubiony, tekst pod nim i info na dole (&quot;&quot; bez nich); klik na wierszu woła action z paskiem, numerem wiersza i danymi data; lista przewija się, gdy nie mieści się w panelu; zwraca numer wiersza od 1</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebaraddsection.html"><div><h3>SidebarAddSection</h3><p>Nowa sekcja strony page: panel na kontrolki pod nagłówkiem ze strzałką i tytułem title; klik na nagłówku otwiera albo zamyka panel, a otwarte panele dzielą wysokość strony</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarclearitems.html"><div><h3>SidebarClearItems</h3><p>Usuwa wszystkie wiersze listy strony page, np. przed jej nowym wypełnieniem</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarcreate.html"><div><h3>SidebarCreate</h3><p>Pasek boczny bez stron przy lewej krawędzi okna, między paskami u góry i na dole</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarpage.html"><div><h3>SidebarPage</h3><p>Numer pokazanej strony; 0, gdy panel jest ukryty</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarpanel.html"><div><h3>SidebarPanel</h3><p>Panel strony page; kontrolki kładzie się na nim jak na oknie</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetaccentcolor.html"><div><h3>SidebarSetAccentColor</h3><p>Kolor znacznika pokazanej strony i liczników 0xRRGGBB, -1 wraca do koloru zaznaczenia systemu</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetbackground.html"><div><h3>SidebarSetBackground</h3><p>Kolor paneli stron, ich sekcji i nagłówków 0xRRGGBB; na początku kolor paska obrazków</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetbadge.html"><div><h3>SidebarSetBadge</h3><p>Licznik na ikonie strony; 0 go ukrywa</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetbarcolor.html"><div><h3>SidebarSetBarColor</h3><p>Kolor paska obrazków 0xRRGGBB, -1 wraca do koloru domyślnego</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetforeground.html"><div><h3>SidebarSetForeground</h3><p>Kolor tekstu paneli stron, ich sekcji i nagłówków 0xRRGGBB; na początku jasny</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetitemsettings.html"><div><h3>SidebarSetItemSettings</h3><p>Przycisk ustawień z prawej strony info wiersza item; klik na nim woła action jak klik na wierszu</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetmenu.html"><div><h3>SidebarSetMenu</h3><p>Panel strony page pokazuje pozycje menu jedna pod drugą: klik na poleceniu wykonuje je jak w pasku menu, klik na menu rozwijanym otwiera je z prawej strony</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetonchange.html"><div><h3>SidebarSetOnChange</h3><p>Akcja po pokazaniu albo ukryciu strony kliknięciem jej ikony, klawiszem albo krawędzią panelu; pokazaną stronę daje SidebarPage()</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetpage.html"><div><h3>SidebarSetPage</h3><p>Pokazuje stronę page; 0 ukrywa panel</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarsetwidth.html"><div><h3>SidebarSetWidth</h3><p>Szerokość panelu przy 96 DPI, nie mniejsza niż najmniejsza</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebarwidth.html"><div><h3>SidebarWidth</h3><p>Szerokość panelu przy 96 DPI</p></div>
+    <span class="entry-category">Pasek boczny</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

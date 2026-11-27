@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pola edycji i formularze w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Pola edycji i formularze · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html" aria-current="page">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Pola edycji i formularze</h1></header><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-E">E</a><a href="#letter-G">G</a><a href="#letter-M">M</a><a href="#letter-R">R</a><a href="#letter-W">W</a></nav><section id="letter-E" class="letter-group">
+    <h2>E</h2>
+    <div><a class="entry-row" href="editcreate.html"><div><h3>EditCreate</h3><p>Pole tekstu w jednym wierszu; width i height 0 dają 200 x 23; zmiana tekstu woła akcję z ControlSetAction(), utrata fokusu sprawdzenie z ControlSetValid()</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editdate.html"><div><h3>EditDate</h3><p>Data pola daty jako RRRRMMDD; 0 dla pustej albo złej daty</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editmaxlength.html"><div><h3>EditMaxLength</h3><p>Najwięcej znaków, które użytkownik może wpisać</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editnumber.html"><div><h3>EditNumber</h3><p>Liczba pola liczbowego</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editpicture.html"><div><h3>EditPicture</h3><p>Maska pola; &quot;&quot; bez niej</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editreadonly.html"><div><h3>EditReadOnly</h3><p>T, gdy użytkownik nie może zmieniać tekstu</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editsetdate.html"><div><h3>EditSetDate</h3><p>Robi z pola pole daty w formacie Set( SET_DATEFORMAT ); date RRRRMMDD, 0 = pusta</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editsetmaxlength.html"><div><h3>EditSetMaxLength</h3><p>Najwięcej znaków, które użytkownik może wpisać; 0 wraca do największej liczby systemu</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editsetnumber.html"><div><h3>EditSetNumber</h3><p>Robi z pola pole liczbowe z liczbą przy prawej krawędzi, pokazaną przez maskę</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editsetpicture.html"><div><h3>EditSetPicture</h3><p>Maska: szablon 9 # A N X L Y ! ze znakami stałymi, funkcje @! @K @R przed spacją; liczba bierze cyfry szablonu przed kropką i po niej, data idzie za Set( SET_DATEFORMAT ); wartość pokazuje się od nowa przez maskę</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="editsetreadonly.html"><div><h3>EditSetReadOnly</h3><p>Pozwala albo zabrania użytkownikowi zmieniać tekst; program zawsze może go ustawić</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-G" class="letter-group">
+    <h2>G</h2>
+    <div><a class="entry-row" href="getdate.html"><div><h3>GetDate</h3><p>Pole GET daty value RRRRMMDD (0 = pusta) w formacie Set( SET_DATEFORMAT )</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="getmemo.html"><div><h3>GetMemo</h3><p>Pole GET tekstu w wielu wierszach: tekst się zawija, pole pokazuje jeden wiersz i w czasie edycji rośnie nad polami pod nim do najwyżej rows wierszy; Shift+Enter zaczyna nowy wiersz (CR LF)</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="getnumber.html"><div><h3>GetNumber</h3><p>Pole GET liczby value przy prawej krawędzi, pokazanej przez maskę; edytowana jest sama liczba</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="gettext.html"><div><h3>GetText</h3><p>Pole GET tekstu value o rozmiarze size (z zerem na końcu), jak @ ... GET ... PICTURE; bez maski można wpisać najwyżej tyle znaków, ile mieści zmienna; WinReadModal() zakończony zapisem wpisuje do niej nową wartość</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-M" class="letter-group">
+    <h2>M</h2>
+    <div><a class="entry-row" href="memocreate.html"><div><h3>MemoCreate</h3><p>Pole tekstu w wielu wierszach z przewijaniem; width i height 0 dają 200 x 80; wiersze kończy CR LF</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-R" class="letter-group">
+    <h2>R</h2>
+    <div><a class="entry-row" href="readlastkey.html"><div><h3>ReadLastKey</h3><p>Klawisz, którym skończył się ostatni WinReadModal(): K_ENTER, K_PGDN, K_PGUP albo K_ESC</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-W" class="letter-group">
+    <h2>W</h2>
+    <div><a class="entry-row" href="winendread.html"><div><h3>WinEndRead</h3><p>Kończy trwający WinReadModal() jak PgDn (save T) albo Esc (F), np. z przycisków Zapisz i Anuluj</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="winreadmodal.html"><div><h3>WinReadModal</h3><p>Użytkownik wypełnia pola okna jak w ReadModal(): pola są edytowalne tylko w czasie odczytu, tabele, paski i menu czekają; Enter przechodzi do następnego pola, Enter na ostatnim polu, PgDn i PgUp kończą odczyt z zapisem po sprawdzeniu pola, Esc bez zapisu; z gets (count pól edycji, pól wyboru i przycisków opcji) tylko te pola biorą udział, w tej kolejności, a count 0 bierze wszystkie pola jednowierszowe okna; first to numer pola od 1, w którym zaczyna się edycja (0 = pierwsze widoczne); po zapisie pola GET wpisują wartości do swoich zmiennych</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

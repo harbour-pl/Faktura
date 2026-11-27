@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Typy, stałe i makra w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Typy, stałe i makra · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../prog-zaso/css/site.css">
+  <script src="../prog-zaso/js/catalog.js" defer></script>
+  <script src="../prog-zaso/js/syntax.js" defer></script>
+  <script src="../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../index.html">Dokumentacja</a>
+      <a class="" href="../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../reference/typy.html" aria-current="page">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Typy, stałe i makra</h1></header><p>Publiczne deklaracje są w <a href="../../include/xwgui.h"><code>include/xwgui.h</code></a>. Rozmiary i położenie kontrolek podaje się w pikselach logicznych przy 96 DPI. Kolory interfejsu mają postać <code>0xRRGGBB</code>, a funkcje SVG przyjmują kolory jako tekst.</p><section class="doc-section"><h2>Typy i funkcje zwrotne</h2><div class="code-block">
+    <div class="code-toolbar"><span>xwgui.h</span>
+      <button type="button" class="copy-button" data-copy="code-types" aria-label="Kopiuj kod" title="Kopiuj kod" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+      </button>
+    </div>
+    <pre tabindex="0"><code id="code-types" class="language-c">typedef enum bool
+{
+   F = 0,
+   T = ( ! 0 )
+} bool;
+
+typedef struct App App;
+typedef struct Win Win;
+typedef struct Svg Svg;
+typedef struct Menu Menu;
+typedef struct StatusBar StatusBar;
+typedef struct Sidebar Sidebar;
+typedef struct Picture Picture;
+typedef struct Control Control;
+typedef struct Timer Timer;
+typedef struct TreeItem TreeItem;
+typedef struct Toolbar Toolbar;
+
+/* Akcja przycisku paska: pasek i dane podane w ToolbarAdd() */
+typedef void ( *ToolbarAction )( Toolbar *toolbar, void *data );
+
+/* Krawędź okna, przy której stoi pasek przycisków */
+#define TOOLBAR_TOP    0
+#define TOOLBAR_BOTTOM 1
+#define TOOLBAR_LEFT   2
+#define TOOLBAR_RIGHT  3
+
+/* Kolory paska przycisków dla ToolbarSetColor() */
+#define TOOLBAR_FOREGROUND      0
+#define TOOLBAR_BACKGROUND      1
+#define TOOLBAR_HOVERFOREGROUND 2
+#define TOOLBAR_HOVERBACKGROUND 3
+#define TOOLBAR_PRESSFOREGROUND 4
+#define TOOLBAR_PRESSBACKGROUND 5
+
+/* Akcja kontrolki (klik przycisku, zmiana pola wyboru): kontrolka i dane podane w ControlSetAction() */
+typedef void ( *ControlAction )( Control *control, void *data );
+
+/* Akcja timera: timer i dane podane w TimerCreate() */
+typedef void ( *TimerAction )( Timer *timer, void *data );
+
+/* Sprawdzenie pola, gdy traci fokus: F zatrzymuje fokus w polu */
+typedef bool ( *ControlValid )( Control *control, void *data );
+
+/* Akcja przycisku paska bocznego: pasek i dane podane przy dodaniu przycisku */
+typedef void ( *SidebarAction )( Sidebar *sidebar, void *data );
+
+/* Akcja wiersza listy paska bocznego albo jego przycisku ustawień: pasek, numer wiersza od 1 i dane podane razem
+   z akcją */
+typedef void ( *SidebarItemAction )( Sidebar *sidebar, int item, void *data );
+
+/* Akcja pozycji menu: okno z menu i dane podane w MenuAdd() */
+typedef void ( *MenuAction )( Win *win, void *data );
+
+/* Tabela rekordów jak TBrowse: dane czyta przez akcje programu, które dostają tabelę i dane podane razem z nimi;
+   goTop i goBottom ustawiają pierwszy i ostatni rekord, skip przesuwa rekord o count i zwraca, o ile przesunął,
+   position zwraca miejsce rekordu 0..1 (ujemne, gdy go nie zna), empty T dla danych bez rekordów */
+typedef void ( *BrowseMove )( Control *browse, void *data );
+typedef int ( *BrowseSkip )( Control *browse, int count, void *data );
+typedef double ( *BrowsePosition )( Control *browse, void *data );
+typedef bool ( *BrowseEmpty )( Control *browse, void *data );
+
+/* Wartość kolumny tabeli w bieżącym rekordzie: tekst (tabela robi sobie kopię), liczba albo znacznik; setCheck daje
+   znacznikowi przeciwną wartość */
+typedef const char *( *BrowseText )( Control *browse, void *data );
+typedef double ( *BrowseNumber )( Control *browse, void *data );
+typedef bool ( *BrowseCheck )( Control *browse, void *data );
+typedef void ( *BrowseSetCheck )( Control *browse, bool value, void *data );
+
+/* Wyrównanie kolumny tabeli */
+#define BROWSE_LEFT   0
+#define BROWSE_RIGHT  1
+#define BROWSE_CENTER 2
+
+/* Kolory tabeli dla BrowseSetColor() */
+#define BROWSE_HEADBACKGROUND      0
+#define BROWSE_HEADFOREGROUND      1
+#define BROWSE_HEADLINE            2
+#define BROWSE_BACKGROUND          3
+#define BROWSE_ALTERNATEBACKGROUND 4
+#define BROWSE_FOREGROUND          5
+#define BROWSE_GRIDLINE            6
+#define BROWSE_CURSORBACKGROUND    7
+#define BROWSE_CURSORFOREGROUND    8
+#define BROWSE_INACTIVECURSOR      9
+#define BROWSE_CHECKFOREGROUND     10
+#define BROWSE_COLORS              11
+
+/* Akcja okna: po zmianie rozmiaru albo pod klawiszem z WinSetKey(); okno i dane podane razem z akcją */
+typedef void ( *WinAction )( Win *win, void *data );
+
+/* Zgoda na zamknięcie okna: F zostawia okno otwarte */
+typedef bool ( *WinValid )( Win *win, void *data );
+
+typedef enum
+{
+   SET_DATEFORMAT,
+   SET_PATH,
+   SET_CURSOR,
+} SetSys;
+
+typedef enum
+{
+   WIN_NORMAL,
+   WIN_MAXIMIZED,
+   WIN_MINIMIZED,
+   WIN_FULLSCREEN
+} WinState;</code></pre>
+  </div></section><section class="doc-section"><h2>Stałe i makra</h2><div class="code-block">
+    <div class="code-toolbar"><span>xwgui.h</span>
+      <button type="button" class="copy-button" data-copy="code-macros" aria-label="Kopiuj kod" title="Kopiuj kod" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+      </button>
+    </div>
+    <pre tabindex="0"><code id="code-macros" class="language-c">#define SC_NONE       &quot;0&quot;   /* brak */
+#define SC_NORMAL     &quot;1&quot;   /* podkreślenie */
+#define SC_INSERT     &quot;2&quot;   /* dolna połowa pola */
+#define SC_SPECIAL1   &quot;3&quot;   /* pełne pole */
+#define SC_SPECIAL2   &quot;4&quot;   /* górna połowa pola */
+#define FONT_WEIGHT_THIN        100
+#define FONT_WEIGHT_EXTRA_LIGHT 200
+#define FONT_WEIGHT_LIGHT       300
+#define FONT_WEIGHT_NORMAL      400
+#define FONT_WEIGHT_MEDIUM      500
+#define FONT_WEIGHT_SEMI_BOLD   600
+#define FONT_WEIGHT_BOLD        700
+#define FONT_WEIGHT_EXTRA_BOLD  800
+#define FONT_WEIGHT_BLACK       900
+#define SVG_ALIGN_LEFT          0
+#define SVG_ALIGN_CENTER        1
+#define SVG_ALIGN_RIGHT         2
+#define UNUSED( n ) ( ( void )( n ) )
+#define IIF( condition, trueValue, falseValue ) ( ( condition ) ? ( trueValue ) : ( falseValue ) )
+#define MAX( left, right ) IIF( ( left ) &gt; ( right ), left, right )
+#define MIN( left, right ) IIF( ( left ) &lt; ( right ), left, right )</code></pre>
+  </div></section><section class="doc-section" id="klawisze"><h2>Kody klawiszy</h2><p><a href="../../include/xwgui-inkey.h"><code>xwgui-inkey.h</code></a> jest dołączany przez <code>xwgui.h</code>. Niektóre kody są wspólne, np. <code>K_CTRL_S</code> i <code>K_LEFT</code>. Skróty rozróżnia się nazwą, np. w <code>MenuAdd()</code> i <code>WinSetKey()</code>.</p><div class="code-block">
+    <div class="code-toolbar"><span>xwgui-inkey.h</span>
+      <button type="button" class="copy-button" data-copy="code-keys" aria-label="Kopiuj kod" title="Kopiuj kod" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
+      </button>
+    </div>
+    <pre tabindex="0"><code id="code-keys" class="language-c">/* Strzałki i klawisze ruchu */
+
+#define K_UP                    5
+#define K_DOWN                 24
+#define K_LEFT                 19
+#define K_RIGHT                 4
+#define K_HOME                  1
+#define K_END                   6
+#define K_PGUP                 18
+#define K_PGDN                  3
+
+#define K_CTRL_UP             397
+#define K_CTRL_DOWN           401
+#define K_CTRL_LEFT            26
+#define K_CTRL_RIGHT            2
+#define K_CTRL_HOME            29
+#define K_CTRL_END             23
+#define K_CTRL_PGUP            31
+#define K_CTRL_PGDN            30
+
+#define K_ALT_UP              408
+#define K_ALT_DOWN            416
+#define K_ALT_LEFT            411
+#define K_ALT_RIGHT           413
+#define K_ALT_HOME            407
+#define K_ALT_END             415
+#define K_ALT_PGUP            409
+#define K_ALT_PGDN            417
+
+/* Enter, spacja i Esc */
+
+#define K_ENTER                13
+#define K_INTRO                13
+#define K_RETURN               13
+#define K_SPACE                32
+#define K_ESC                  27
+
+#define K_CTRL_ENTER           10
+#define K_CTRL_RETURN          10
+#define K_CTRL_RET             10
+#define K_CTRL_PRTSCR         379
+#define K_CTRL_QUESTION       309
+
+#define K_ALT_ENTER           284
+#define K_ALT_RETURN          284
+#define K_ALT_EQUALS          387
+#define K_ALT_ESC             257
+
+/* Klawisze edycji */
+
+#define K_INS                  22
+#define K_DEL                   7
+#define K_BS                    8
+#define K_TAB                   9
+#define K_SH_TAB              271
+
+#define K_CTRL_INS            402
+#define K_CTRL_DEL            403
+#define K_CTRL_BS             127
+#define K_CTRL_TAB            404
+
+#define K_ALT_INS             418
+#define K_ALT_DEL             419
+#define K_ALT_BS              270
+#define K_ALT_TAB             421
+
+#define K_CTRL_SH_TAB         423
+#define K_SH_BS               423
+
+/* Ctrl+litera */
+
+#define K_CTRL_A                1
+#define K_CTRL_B                2
+#define K_CTRL_C                3
+#define K_CTRL_D                4
+#define K_CTRL_E                5
+#define K_CTRL_F                6
+#define K_CTRL_G                7
+#define K_CTRL_H                8
+#define K_CTRL_I                9
+#define K_CTRL_J               10
+#define K_CTRL_K               11
+#define K_CTRL_L               12
+#define K_CTRL_M               13
+#define K_CTRL_N               14
+#define K_CTRL_O               15
+#define K_CTRL_P               16
+#define K_CTRL_Q               17
+#define K_CTRL_R               18
+#define K_CTRL_S               19
+#define K_CTRL_T               20
+#define K_CTRL_U               21
+#define K_CTRL_V               22
+#define K_CTRL_W               23
+#define K_CTRL_X               24
+#define K_CTRL_Y               25
+#define K_CTRL_Z               26
+
+/* Alt+litera, cyfra i znak */
+
+#define K_ALT_A               286
+#define K_ALT_B               304
+#define K_ALT_C               302
+#define K_ALT_D               288
+#define K_ALT_E               274
+#define K_ALT_F               289
+#define K_ALT_G               290
+#define K_ALT_H               291
+#define K_ALT_I               279
+#define K_ALT_J               292
+#define K_ALT_K               293
+#define K_ALT_L               294
+#define K_ALT_M               306
+#define K_ALT_N               305
+#define K_ALT_O               280
+#define K_ALT_P               281
+#define K_ALT_Q               272
+#define K_ALT_R               275
+#define K_ALT_S               287
+#define K_ALT_T               276
+#define K_ALT_U               278
+#define K_ALT_V               303
+#define K_ALT_W               273
+#define K_ALT_X               301
+#define K_ALT_Y               277
+#define K_ALT_Z               300
+#define K_ALT_BACKQUOTE       297
+#define K_ALT_1               376
+#define K_ALT_2               377
+#define K_ALT_3               378
+#define K_ALT_4               379
+#define K_ALT_5               380
+#define K_ALT_6               381
+#define K_ALT_7               382
+#define K_ALT_8               383
+#define K_ALT_9               384
+#define K_ALT_0               385
+#define K_ALT_MINUS           386
+#define K_ALT_OSB             282
+#define K_ALT_CSB             283
+#define K_ALT_BACKSLASH       299
+#define K_ALT_SC              295
+#define K_ALT_QUOTE           296
+#define K_ALT_COMMA           307
+#define K_ALT_PERIOD          308
+#define K_ALT_SLASH           309
+
+/* Klawisze funkcyjne */
+
+#define K_F1                   28
+#define K_F2                   -1
+#define K_F3                   -2
+#define K_F4                   -3
+#define K_F5                   -4
+#define K_F6                   -5
+#define K_F7                   -6
+#define K_F8                   -7
+#define K_F9                   -8
+#define K_F10                  -9
+#define K_F11                 -40
+#define K_F12                 -41
+
+/* Ctrl+klawisz funkcyjny */
+
+#define K_CTRL_F1             -20
+#define K_CTRL_F2             -21
+#define K_CTRL_F3             -22
+#define K_CTRL_F4             -23
+#define K_CTRL_F5             -24
+#define K_CTRL_F6             -25
+#define K_CTRL_F7             -26
+#define K_CTRL_F8             -27
+#define K_CTRL_F9             -28
+#define K_CTRL_F10            -29
+#define K_CTRL_F11            -44
+#define K_CTRL_F12            -45
+
+/* Alt+klawisz funkcyjny */
+
+#define K_ALT_F1              -30
+#define K_ALT_F2              -31
+#define K_ALT_F3              -32
+#define K_ALT_F4              -33
+#define K_ALT_F5              -34
+#define K_ALT_F6              -35
+#define K_ALT_F7              -36
+#define K_ALT_F8              -37
+#define K_ALT_F9              -38
+#define K_ALT_F10             -39
+#define K_ALT_F11             -46
+#define K_ALT_F12             -47
+
+/* Shift+klawisz funkcyjny */
+
+#define K_SH_F1               -10
+#define K_SH_F2               -11
+#define K_SH_F3               -12
+#define K_SH_F4               -13
+#define K_SH_F5               -14
+#define K_SH_F6               -15
+#define K_SH_F7               -16
+#define K_SH_F8               -17
+#define K_SH_F9               -18
+#define K_SH_F10              -19
+#define K_SH_F11              -42
+#define K_SH_F12              -43</code></pre>
+  </div></section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

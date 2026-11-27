@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tabele rekordów w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Tabele rekordów · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../prog-zaso/css/site.css">
+  <script src="../../prog-zaso/js/catalog.js" defer></script>
+  <script src="../../prog-zaso/js/syntax.js" defer></script>
+  <script src="../../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../../index.html">Dokumentacja</a>
+      <a class="" href="../../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../../reference/index.html">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../../reference/browse/index.html" aria-current="page">Tabele rekordów</a>
+<a class="sidebar-link" href="../../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Tabele rekordów</h1></header><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-B">B</a></nav><section id="letter-B" class="letter-group">
+    <h2>B</h2>
+    <div><a class="entry-row" href="browseaddcheck.html"><div><h3>BrowseAddCheck</h3><p>Kolumna znacznika: check zwraca znacznik bieżącego rekordu, pokazany jako ptaszek √; Spacja albo klik na nim woła setCheck z przeciwną wartością, jak blok get/set TBColumn; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browseaddcolumn.html"><div><h3>BrowseAddColumn</h3><p>Kolumna tekstu: text zwraca tekst bieżącego rekordu, bez spacji na końcu; width to liczba znaków, a 0 bierze długość tekstu bieżącego rekordu; align to BROWSE_LEFT, BROWSE_RIGHT albo BROWSE_CENTER; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browseaddnumber.html"><div><h3>BrowseAddNumber</h3><p>Kolumna liczby z prawej strony: number zwraca liczbę bieżącego rekordu, picture formatuje ją jak Transform() (&quot;&quot; jak Str()); width 0 bierze długość szablonu maski albo 10 znaków; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsecolor.html"><div><h3>BrowseColor</h3><p>Kolor części tabeli: BROWSE_HEADBACKGROUND, BROWSE_HEADFOREGROUND, BROWSE_HEADLINE, BROWSE_BACKGROUND, BROWSE_ALTERNATEBACKGROUND, BROWSE_FOREGROUND, BROWSE_GRIDLINE, BROWSE_CURSORBACKGROUND, BROWSE_CURSORFOREGROUND, BROWSE_INACTIVECURSOR (kursor tabeli bez fokusu) albo BROWSE_CHECKFOREGROUND (ptaszek)</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsecolpos.html"><div><h3>BrowseColPos</h3><p>Kolumna kursora od 1, jak TBrowse:colPos</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsecreate.html"><div><h3>BrowseCreate</h3><p>Tabela rekordów jak TBrowse; width i height 0 dają 400 x 200; kursor stoi na jednej komórce, a strzałki, PgUp, PgDn, Ctrl+Home i Ctrl+End przesuwają go jak w TBrowse; przejście na inny rekord woła akcję z ControlSetAction(), Enter albo podwójny klik akcję z ControlSetDoubleClick(); w czasie WinReadModal() tabela czeka</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsefreeze.html"><div><h3>BrowseFreeze</h3><p>Liczba pierwszych kolumn, które stoją z lewej, gdy tabela przewija się w bok, jak TBrowse:freeze</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browserefresh.html"><div><h3>BrowseRefresh</h3><p>Czyta od nowa wiersze wokół bieżącego rekordu, np. po zmianie danych albo przeniesieniu rekordu</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetcolor.html"><div><h3>BrowseSetColor</h3><p>Nowy kolor 0xRRGGBB części tabeli jak w BrowseColor(); część albo kolor spoza zakresu nic nie zmienia</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetcolpos.html"><div><h3>BrowseSetColPos</h3><p>Przenosi kursor do kolumny column; tabela przewija się tak, żeby kolumnę było widać</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetempty.html"><div><h3>BrowseSetEmpty</h3><p>T, gdy dane nie mają rekordów; tabela nie pokazuje wtedy żadnego wiersza zamiast rekordu za końcem danych</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetfreeze.html"><div><h3>BrowseSetFreeze</h3><p>Ustawia liczbę pierwszych kolumn przypiętych z lewej podczas przewijania. Wartość 0 lub ujemna wyłącza przypięcie</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetposition.html"><div><h3>BrowseSetPosition</h3><p>Miejsce bieżącego rekordu w danych 0..1 dla paska przewijania; bez niej pasek zna tylko początek i koniec danych</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browsesetsource.html"><div><h3>BrowseSetSource</h3><p>Dane tabeli: goTop i goBottom ustawiają pierwszy i ostatni rekord, skip przesuwa rekord o count i zwraca, o ile przesunął, jak skipBlock; data dostają te akcje oraz akcje z BrowseSetPosition() i BrowseSetEmpty()</p></div>
+    <span class="entry-category">Tabele rekordów</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

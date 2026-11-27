@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wszystkie funkcje w dokumentacji XWGUI.">
+  <meta name="color-scheme" content="light dark">
+  <title>Wszystkie funkcje · Dokumentacja XWGUI</title>
+  <link rel="icon" href="../prog-zaso/wekt/logo-xwgui.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../prog-zaso/css/site.css">
+  <script src="../prog-zaso/js/catalog.js" defer></script>
+  <script src="../prog-zaso/js/syntax.js" defer></script>
+  <script src="../prog-zaso/js/site.js" defer></script>
+</head>
+<body data-base="../">
+  <a class="skip-link" href="#tresc">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="brand-area">
+      <button class="menu-button" type="button" aria-label="Otwórz nawigację" aria-controls="site-navigation" aria-expanded="false" hidden>☰</button>
+    </div>
+    <nav class="header-nav" aria-label="Menu główne">
+      <a class="" href="../index.html">Dokumentacja</a>
+      <a class="" href="../reference/index.html" aria-current="page">Publiczne API</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-trigger" type="button" aria-label="Szukaj w dokumentacji" aria-haspopup="dialog" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <span>Szukaj w dokumentacji</span><kbd>Ctrl+K</kbd>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Ciemny motyw" title="Ciemny motyw" aria-pressed="false" hidden>◐</button>
+    </div>
+  </header>
+  <div class="site-layout">
+    <aside class="sidebar" id="site-navigation">
+      <button class="close-menu" type="button" aria-label="Zamknij nawigację" hidden>×</button>
+      <nav aria-label="Spis treści">
+        <a class="sidebar-link" href="../index.html">Przegląd</a>
+        <a class="sidebar-link" href="../reference/index.html" aria-current="page">Wszystkie funkcje</a>
+        <div class="nav-group"><h2>Publiczne API</h2>
+<a class="sidebar-link" href="../reference/app/index.html">Aplikacja i okna</a>
+<a class="sidebar-link" href="../reference/kontrolki/index.html">Kontrolki</a>
+<a class="sidebar-link" href="../reference/pola/index.html">Pola edycji i formularze</a>
+<a class="sidebar-link" href="../reference/listy/index.html">Listy i drzewa</a>
+<a class="sidebar-link" href="../reference/browse/index.html">Tabele rekordów</a>
+<a class="sidebar-link" href="../reference/widoki/index.html">Zakładki, suwaki i wskaźniki</a>
+<a class="sidebar-link" href="../reference/menu/index.html">Menu</a>
+<a class="sidebar-link" href="../reference/toolbar/index.html">Pasek narzędzi</a>
+<a class="sidebar-link" href="../reference/status/index.html">Pasek stanu</a>
+<a class="sidebar-link" href="../reference/sidebar/index.html">Pasek boczny</a>
+<a class="sidebar-link" href="../reference/obrazy/index.html">Obrazy i ikony</a>
+<a class="sidebar-link" href="../reference/system/index.html">Ustawienia, daty i pliki</a>
+<a class="sidebar-link" href="../reference/svg/index.html">Zapis SVG</a>
+<a class="sidebar-link" href="../reference/typy.html">Typy, stałe i makra</a>
+</div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../examples/index.html">Przykłady</a></div>
+        <div class="sidebar-collection"><a class="sidebar-link" href="../reference/build/index.html">Budowanie i instalacja</a></div>
+      </nav>
+    </aside>
+    <main id="tresc" class="main-content" tabindex="-1">
+      <header class="page-heading"><h1>Wszystkie funkcje</h1></header><nav class="category-chips" aria-label="Kategorie funkcji"><a href="app/index.html">Aplikacja i okna</a><a href="kontrolki/index.html">Kontrolki</a><a href="pola/index.html">Pola edycji i formularze</a><a href="listy/index.html">Listy i drzewa</a><a href="browse/index.html">Tabele rekordów</a><a href="widoki/index.html">Zakładki, suwaki i wskaźniki</a><a href="menu/index.html">Menu</a><a href="toolbar/index.html">Pasek narzędzi</a><a href="status/index.html">Pasek stanu</a><a href="sidebar/index.html">Pasek boczny</a><a href="obrazy/index.html">Obrazy i ikony</a><a href="system/index.html">Ustawienia, daty i pliki</a><a href="svg/index.html">Zapis SVG</a></nav><nav class="alphabet" aria-label="Przejdź do litery"><a href="#letter-A">A</a><a href="#letter-B">B</a><a href="#letter-C">C</a><a href="#letter-D">D</a><a href="#letter-E">E</a><a href="#letter-F">F</a><a href="#letter-G">G</a><a href="#letter-L">L</a><a href="#letter-M">M</a><a href="#letter-P">P</a><a href="#letter-R">R</a><a href="#letter-S">S</a><a href="#letter-T">T</a><a href="#letter-W">W</a></nav><section id="letter-A" class="letter-group">
+    <h2>A</h2>
+    <div><a class="entry-row" href="app/apparg.html"><div><h3>AppArg</h3><p>Argument programu w UTF-8; 0 to sam program, brak argumentu daje &quot;&quot;</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/appcreate.html"><div><h3>AppCreate</h3><p>Tworzy aplikację: instancję programu i klasy okien</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/appdestroy.html"><div><h3>AppDestroy</h3><p>Niszczy główne okno, jeśli jeszcze istnieje, i zwalnia aplikację</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/apprun.html"><div><h3>AppRun</h3><p>Pokazuje główne okno i obsługuje komunikaty, dopóki się nie zamknie; zwraca kod wyjścia, -1 dla okna innej aplikacji albo gdy pętla już działa</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+<section id="letter-B" class="letter-group">
+    <h2>B</h2>
+    <div><a class="entry-row" href="browse/browseaddcheck.html"><div><h3>BrowseAddCheck</h3><p>Kolumna znacznika: check zwraca znacznik bieżącego rekordu, pokazany jako ptaszek √; Spacja albo klik na nim woła setCheck z przeciwną wartością, jak blok get/set TBColumn; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browseaddcolumn.html"><div><h3>BrowseAddColumn</h3><p>Kolumna tekstu: text zwraca tekst bieżącego rekordu, bez spacji na końcu; width to liczba znaków, a 0 bierze długość tekstu bieżącego rekordu; align to BROWSE_LEFT, BROWSE_RIGHT albo BROWSE_CENTER; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browseaddnumber.html"><div><h3>BrowseAddNumber</h3><p>Kolumna liczby z prawej strony: number zwraca liczbę bieżącego rekordu, picture formatuje ją jak Transform() (&quot;&quot; jak Str()); width 0 bierze długość szablonu maski albo 10 znaków; zwraca numer kolumny od 1</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsecolor.html"><div><h3>BrowseColor</h3><p>Kolor części tabeli: BROWSE_HEADBACKGROUND, BROWSE_HEADFOREGROUND, BROWSE_HEADLINE, BROWSE_BACKGROUND, BROWSE_ALTERNATEBACKGROUND, BROWSE_FOREGROUND, BROWSE_GRIDLINE, BROWSE_CURSORBACKGROUND, BROWSE_CURSORFOREGROUND, BROWSE_INACTIVECURSOR (kursor tabeli bez fokusu) albo BROWSE_CHECKFOREGROUND (ptaszek)</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsecolpos.html"><div><h3>BrowseColPos</h3><p>Kolumna kursora od 1, jak TBrowse:colPos</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsecreate.html"><div><h3>BrowseCreate</h3><p>Tabela rekordów jak TBrowse; width i height 0 dają 400 x 200; kursor stoi na jednej komórce, a strzałki, PgUp, PgDn, Ctrl+Home i Ctrl+End przesuwają go jak w TBrowse; przejście na inny rekord woła akcję z ControlSetAction(), Enter albo podwójny klik akcję z ControlSetDoubleClick(); w czasie WinReadModal() tabela czeka</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsefreeze.html"><div><h3>BrowseFreeze</h3><p>Liczba pierwszych kolumn, które stoją z lewej, gdy tabela przewija się w bok, jak TBrowse:freeze</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browserefresh.html"><div><h3>BrowseRefresh</h3><p>Czyta od nowa wiersze wokół bieżącego rekordu, np. po zmianie danych albo przeniesieniu rekordu</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetcolor.html"><div><h3>BrowseSetColor</h3><p>Nowy kolor 0xRRGGBB części tabeli jak w BrowseColor(); część albo kolor spoza zakresu nic nie zmienia</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetcolpos.html"><div><h3>BrowseSetColPos</h3><p>Przenosi kursor do kolumny column; tabela przewija się tak, żeby kolumnę było widać</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetempty.html"><div><h3>BrowseSetEmpty</h3><p>T, gdy dane nie mają rekordów; tabela nie pokazuje wtedy żadnego wiersza zamiast rekordu za końcem danych</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetfreeze.html"><div><h3>BrowseSetFreeze</h3><p>Ustawia liczbę pierwszych kolumn przypiętych z lewej podczas przewijania. Wartość 0 lub ujemna wyłącza przypięcie</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetposition.html"><div><h3>BrowseSetPosition</h3><p>Miejsce bieżącego rekordu w danych 0..1 dla paska przewijania; bez niej pasek zna tylko początek i koniec danych</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="browse/browsesetsource.html"><div><h3>BrowseSetSource</h3><p>Dane tabeli: goTop i goBottom ustawiają pierwszy i ostatni rekord, skip przesuwa rekord o count i zwraca, o ile przesunął, jak skipBlock; data dostają te akcje oraz akcje z BrowseSetPosition() i BrowseSetEmpty()</p></div>
+    <span class="entry-category">Tabele rekordów</span></a>
+<a class="entry-row" href="kontrolki/buttoncreate.html"><div><h3>ButtonCreate</h3><p>Przycisk; width i height 0 dają 90 x 25; klik woła akcję z ControlSetAction()</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/buttoniscancel.html"><div><h3>ButtonIsCancel</h3><p>T, gdy przycisk jest przyciskiem anulowania okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/buttonisdefault.html"><div><h3>ButtonIsDefault</h3><p>T, gdy przycisk jest domyślnym przyciskiem okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/buttonsetcancel.html"><div><h3>ButtonSetCancel</h3><p>Przycisk anulowania okna, naciskany przez Esc</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/buttonsetdefault.html"><div><h3>ButtonSetDefault</h3><p>Domyślny przycisk okna, naciskany przez Enter</p></div>
+    <span class="entry-category">Kontrolki</span></a></div>
+  </section>
+<section id="letter-C" class="letter-group">
+    <h2>C</h2>
+    <div><a class="entry-row" href="kontrolki/checkboxchecked.html"><div><h3>CheckBoxChecked</h3><p>T, gdy pole wyboru albo przycisk opcji jest zaznaczony</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/checkboxcreate.html"><div><h3>CheckBoxCreate</h3><p>Pole wyboru; width i height 0 dają 200 x 20; zmiana stanu przez użytkownika woła akcję z ControlSetAction()</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/checkboxsetchecked.html"><div><h3>CheckBoxSetChecked</h3><p>Zaznacza albo czyści pole wyboru albo przycisk opcji; zaznaczony przycisk opcji czyści pozostałe ze swojej grupy</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="listy/comboboxcreate.html"><div><h3>ComboBoxCreate</h3><p>Lista rozwijana; width i height 0 dają 200 x 200 razem z rozwiniętą listą; funkcje jak dla ListBox, bez podwójnego kliku</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="kontrolki/controlanchor.html"><div><h3>ControlAnchor</h3><p>Krawędzie okna, do których przypięta jest kontrolka, jako litery L, T, R, B; &quot;LT&quot; bez przypięcia</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlcolor.html"><div><h3>ControlColor</h3><p>Własny kolor tekstu etykiety, ramki, pola wyboru albo przycisku opcji 0xRRGGBB; -1 = kolor okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controldestroy.html"><div><h3>ControlDestroy</h3><p>Usuwa kontrolkę z okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlenabled.html"><div><h3>ControlEnabled</h3><p>T, gdy kontrolka jest dostępna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlfocused.html"><div><h3>ControlFocused</h3><p>T, gdy kontrolka ma fokus klawiatury</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlheight.html"><div><h3>ControlHeight</h3><p>Wysokość kontrolki</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlremovecontextmenu.html"><div><h3>ControlRemoveContextMenu</h3><p>Kontrolka bez własnego menu podręcznego; prawy klik otwiera wtedy menu podręczne okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetaction.html"><div><h3>ControlSetAction</h3><p>Akcja kontrolki: klik przycisku, zmiana pola wyboru albo przycisku opcji; dostaje kontrolkę i dane data</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetanchor.html"><div><h3>ControlSetAnchor</h3><p>Przypina kontrolkę do krawędzi okna: L, T, R, B; przeciwne krawędzie rozciągają kontrolkę razem z oknem</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetcolor.html"><div><h3>ControlSetColor</h3><p>Własny kolor tekstu etykiety, ramki, pola wyboru albo przycisku opcji 0xRRGGBB; -1 wraca do koloru okna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetcontextmenu.html"><div><h3>ControlSetContextMenu</h3><p>Menu podręczne kontrolki z MenuCreatePopup(), otwierane prawym przyciskiem myszy albo klawiszem menu; pola edycji zostają przy swoim menu Windows; polecenia menu działają jak polecenia paska menu</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetdoubleclick.html"><div><h3>ControlSetDoubleClick</h3><p>Akcja podwójnego kliku na liście, w tabeli albo w drzewie; dostaje kontrolkę i dane data</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetenabled.html"><div><h3>ControlSetEnabled</h3><p>Udostępnia albo wyłącza kontrolkę</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetfocus.html"><div><h3>ControlSetFocus</h3><p>Daje kontrolce fokus klawiatury</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetfont.html"><div><h3>ControlSetFont</h3><p>Własna czcionka kontrolki dla skali jej ekranu: name &quot;&quot; bierze czcionkę systemu (Segoe UI), size w punktach, 0 bierze rozmiar czcionki systemu; ControlSetFont( control, &quot;&quot;, 0, F, F ) wraca do czcionki systemu</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetheight.html"><div><h3>ControlSetHeight</h3><p>Wysokość kontrolki; kotwice idą za nią</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsettext.html"><div><h3>ControlSetText</h3><p>Tekst kontrolki w UTF-8</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsettooltip.html"><div><h3>ControlSetToolTip</h3><p>Podpowiedź pokazywana, gdy mysz stoi nad kontrolką; &quot;&quot; ją usuwa</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetvalid.html"><div><h3>ControlSetValid</h3><p>Sprawdzenie pola edycji, gdy fokus przechodzi do innej kontrolki okna; F zatrzymuje fokus w polu</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetvisible.html"><div><h3>ControlSetVisible</h3><p>Pokazuje albo ukrywa kontrolkę</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetwidth.html"><div><h3>ControlSetWidth</h3><p>Szerokość kontrolki; kotwice idą za nią</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsetx.html"><div><h3>ControlSetX</h3><p>Przesuwa lewą krawędź kontrolki; kotwice idą za nią</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlsety.html"><div><h3>ControlSetY</h3><p>Przesuwa górną krawędź kontrolki; kotwice idą za nią</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controltext.html"><div><h3>ControlText</h3><p>Tekst kontrolki w UTF-8, ważny do następnego wywołania dla tej kontrolki</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controltooltip.html"><div><h3>ControlToolTip</h3><p>Podpowiedź pokazywana, gdy mysz stoi nad kontrolką; &quot;&quot; bez podpowiedzi</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlvisible.html"><div><h3>ControlVisible</h3><p>T, gdy kontrolka jest widoczna</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlwidth.html"><div><h3>ControlWidth</h3><p>Szerokość kontrolki</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controlx.html"><div><h3>ControlX</h3><p>Lewa krawędź kontrolki w oknie</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/controly.html"><div><h3>ControlY</h3><p>Górna krawędź kontrolki w oknie</p></div>
+    <span class="entry-category">Kontrolki</span></a></div>
+  </section>
+<section id="letter-D" class="letter-group">
+    <h2>D</h2>
+    <div><a class="entry-row" href="widoki/datepickercreate.html"><div><h3>DatePickerCreate</h3><p>Pole daty z rozwijanym kalendarzem; width i height 0 dają 120 x 23; zmiana daty woła akcję z ControlSetAction()</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/datepickerdate.html"><div><h3>DatePickerDate</h3><p>Wybrana data</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/datepickersetdate.html"><div><h3>DatePickerSetDate</h3><p>Wybiera datę; pusta data nie jest dozwolona</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="system/dateyear.html"><div><h3>DateYear</h3><p>Bieżący rok według czasu lokalnego</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="app/dialogcreate.html"><div><h3>DialogCreate</h3><p>Tworzy ukryte okno dialogowe na środku okna owner, z obszarem roboczym width x height pikseli logicznych; NULL dla rozmiaru mniejszego od 1</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/dialogend.html"><div><h3>DialogEnd</h3><p>Kończy DialogShowModal() z wynikiem result</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/dialogshowmodal.html"><div><h3>DialogShowModal</h3><p>Pokazuje okno dialogowe, blokuje okno właściciela i czeka na koniec okna; potem okno znika razem ze swoimi kontrolkami; zwraca wynik z DialogEnd(), 0 po zamknięciu okna bez DialogEnd()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="system/dircreate.html"><div><h3>DirCreate</h3><p>Tworzy katalog (ścieżka w UTF-8); T tylko wtedy, gdy powstał nowy</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a></div>
+  </section>
+<section id="letter-E" class="letter-group">
+    <h2>E</h2>
+    <div><a class="entry-row" href="pola/editcreate.html"><div><h3>EditCreate</h3><p>Pole tekstu w jednym wierszu; width i height 0 dają 200 x 23; zmiana tekstu woła akcję z ControlSetAction(), utrata fokusu sprawdzenie z ControlSetValid()</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editdate.html"><div><h3>EditDate</h3><p>Data pola daty jako RRRRMMDD; 0 dla pustej albo złej daty</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editmaxlength.html"><div><h3>EditMaxLength</h3><p>Najwięcej znaków, które użytkownik może wpisać</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editnumber.html"><div><h3>EditNumber</h3><p>Liczba pola liczbowego</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editpicture.html"><div><h3>EditPicture</h3><p>Maska pola; &quot;&quot; bez niej</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editreadonly.html"><div><h3>EditReadOnly</h3><p>T, gdy użytkownik nie może zmieniać tekstu</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editsetdate.html"><div><h3>EditSetDate</h3><p>Robi z pola pole daty w formacie Set( SET_DATEFORMAT ); date RRRRMMDD, 0 = pusta</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editsetmaxlength.html"><div><h3>EditSetMaxLength</h3><p>Najwięcej znaków, które użytkownik może wpisać; 0 wraca do największej liczby systemu</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editsetnumber.html"><div><h3>EditSetNumber</h3><p>Robi z pola pole liczbowe z liczbą przy prawej krawędzi, pokazaną przez maskę</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editsetpicture.html"><div><h3>EditSetPicture</h3><p>Maska: szablon 9 # A N X L Y ! ze znakami stałymi, funkcje @! @K @R przed spacją; liczba bierze cyfry szablonu przed kropką i po niej, data idzie za Set( SET_DATEFORMAT ); wartość pokazuje się od nowa przez maskę</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/editsetreadonly.html"><div><h3>EditSetReadOnly</h3><p>Pozwala albo zabrania użytkownikowi zmieniać tekst; program zawsze może go ustawić</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-F" class="letter-group">
+    <h2>F</h2>
+    <div><a class="entry-row" href="system/fileexecute.html"><div><h3>FileExecute</h3><p>Otwiera plik w programie, który system ma dla jego rodzaju, np. PDF w przeglądarce PDF; plik programu (.exe, .bat) uruchamia się, więc nie podajemy tu plików z niepewnego źródła</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/fileexists.html"><div><h3>FileExists</h3><p>T, gdy pod ścieżką (w UTF-8) jest zwykły plik; katalog albo urządzenie dają F</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/fileopendialog.html"><div><h3>FileOpenDialog</h3><p>Wybór istniejącego pliku; filters jak &quot;Pliki tekstowe|*.txt|Wszystkie pliki|*.*&quot;, &quot;&quot; bez filtrów; path podaje plik na start (&quot;&quot; bez niego) i dostaje wybrany plik; title &quot;&quot; daje tytuł systemu; F po rezygnacji albo gdy wybrany plik nie mieści się w size bajtach</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/filesavedialog.html"><div><h3>FileSaveDialog</h3><p>Wybór pliku do zapisu jak w FileOpenDialog(); nazwa bez rozszerzenia dostaje rozszerzenie pierwszego filtra, a istniejący plik wymaga potwierdzenia nadpisania</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="obrazy/fonticoncreate.html"><div><h3>FontIconCreate</h3><p>Znak code czcionki TrueType z pliku file (UTF-8) w kolorze color 0xRRGGBB (-1 = kolor tekstu systemu) na kwadracie size pikseli (0 = 24), jako obraz przycisku</p></div>
+    <span class="entry-category">Obrazy i ikony</span></a></div>
+  </section>
+<section id="letter-G" class="letter-group">
+    <h2>G</h2>
+    <div><a class="entry-row" href="pola/getdate.html"><div><h3>GetDate</h3><p>Pole GET daty value RRRRMMDD (0 = pusta) w formacie Set( SET_DATEFORMAT )</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/getmemo.html"><div><h3>GetMemo</h3><p>Pole GET tekstu w wielu wierszach: tekst się zawija, pole pokazuje jeden wiersz i w czasie edycji rośnie nad polami pod nim do najwyżej rows wierszy; Shift+Enter zaczyna nowy wiersz (CR LF)</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/getnumber.html"><div><h3>GetNumber</h3><p>Pole GET liczby value przy prawej krawędzi, pokazanej przez maskę; edytowana jest sama liczba</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="pola/gettext.html"><div><h3>GetText</h3><p>Pole GET tekstu value o rozmiarze size (z zerem na końcu), jak @ ... GET ... PICTURE; bez maski można wpisać najwyżej tyle znaków, ile mieści zmienna; WinReadModal() zakończony zapisem wpisuje do niej nową wartość</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="kontrolki/groupboxcreate.html"><div><h3>GroupBoxCreate</h3><p>Ramka z podpisem wokół innych kontrolek; width i height 0 dają 200 x 100</p></div>
+    <span class="entry-category">Kontrolki</span></a></div>
+  </section>
+<section id="letter-L" class="letter-group">
+    <h2>L</h2>
+    <div><a class="entry-row" href="kontrolki/labeladdlineafter.html"><div><h3>LabelAddLineAfter</h3><p>Linia jednego piksela od końca tekstu do prawej krawędzi etykiety, jak po tytule części formularza; color 0xRRGGBB, -1 = kolor ramek</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/labelalign.html"><div><h3>LabelAlign</h3><p>Wyrównanie tekstu: 0 do lewej, 1 do prawej, 2 do środka</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/labelborder.html"><div><h3>LabelBorder</h3><p>T, gdy etykieta ma wklęsłą ramkę pola</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/labelcreate.html"><div><h3>LabelCreate</h3><p>Tekst w oknie; width i height 0 dają 200 x 20</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/labelsetalign.html"><div><h3>LabelSetAlign</h3><p>Wyrównanie tekstu: 0 do lewej, 1 do prawej (opisy przed polami), 2 do środka</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/labelsetborder.html"><div><h3>LabelSetBorder</h3><p>Wklęsła ramka pola i stała czcionka 9x18 pól edycji, do pokazania wartości jak SAY</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="listy/listboxadd.html"><div><h3>ListBoxAdd</h3><p>Dopisuje pozycję na końcu listy i zwraca jej numer</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxclear.html"><div><h3>ListBoxClear</h3><p>Usuwa wszystkie pozycje</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxcount.html"><div><h3>ListBoxCount</h3><p>Liczba pozycji</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxcreate.html"><div><h3>ListBoxCreate</h3><p>Lista tekstów; width i height 0 dają 200 x 100; wybór woła akcję z ControlSetAction(), podwójny klik akcję z ControlSetDoubleClick()</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxitem.html"><div><h3>ListBoxItem</h3><p>Tekst pozycji, ważny do następnego wywołania dla tej kontrolki</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxselected.html"><div><h3>ListBoxSelected</h3><p>Numer wybranej pozycji; 0, gdy nic nie jest wybrane</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxselectedtext.html"><div><h3>ListBoxSelectedText</h3><p>Tekst wybranej pozycji; &quot;&quot; gdy nic nie jest wybrane</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listboxsetselected.html"><div><h3>ListBoxSetSelected</h3><p>Wybiera pozycję; 0 czyści wybór</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewaddcolumn.html"><div><h3>ListViewAddColumn</h3><p>Nowa kolumna o szerokości width; align 0 do lewej, 1 do prawej, 2 do środka (pierwsza kolumna zawsze do lewej); zwraca numer kolumny</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewaddrow.html"><div><h3>ListViewAddRow</h3><p>Dopisuje wiersz z tekstami count pierwszych kolumn i zwraca jego numer</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewcell.html"><div><h3>ListViewCell</h3><p>Tekst komórki, ważny do następnego wywołania dla tej kontrolki</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewclear.html"><div><h3>ListViewClear</h3><p>Usuwa wszystkie wiersze; kolumny zostają</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewcolumncount.html"><div><h3>ListViewColumnCount</h3><p>Liczba kolumn</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewcount.html"><div><h3>ListViewCount</h3><p>Liczba wierszy</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewcreate.html"><div><h3>ListViewCreate</h3><p>Tabela tekstów z kolumnami; width i height 0 dają 300 x 200; wybór wiersza przez użytkownika woła akcję z ControlSetAction(), podwójny klik akcję z ControlSetDoubleClick()</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewdelete.html"><div><h3>ListViewDelete</h3><p>Usuwa wiersz</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewselected.html"><div><h3>ListViewSelected</h3><p>Numer wybranego wiersza; 0, gdy nic nie jest wybrane</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewsetcell.html"><div><h3>ListViewSetCell</h3><p>Zmienia tekst komórki</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/listviewsetselected.html"><div><h3>ListViewSetSelected</h3><p>Wybiera wiersz i przewija do niego bez akcji wyboru; 0 czyści wybór</p></div>
+    <span class="entry-category">Listy i drzewa</span></a></div>
+  </section>
+<section id="letter-M" class="letter-group">
+    <h2>M</h2>
+    <div><a class="entry-row" href="pola/memocreate.html"><div><h3>MemoCreate</h3><p>Pole tekstu w wielu wierszach z przewijaniem; width i height 0 dają 200 x 80; wiersze kończy CR LF</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="menu/menuadd.html"><div><h3>MenuAdd</h3><p>Pozycja z akcją wołaną z oknem i danymi data; skrót jak &quot;Ctrl+S&quot;, &quot;F1&quot;, &quot;Alt+F4&quot;, &quot;&quot; bez skrótu</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menuadddisabled.html"><div><h3>MenuAddDisabled</h3><p>Pozycja zawsze szara</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menuaddmenu.html"><div><h3>MenuAddMenu</h3><p>Nowe menu rozwijane dołączone do menu</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menuaddseparator.html"><div><h3>MenuAddSeparator</h3><p>Linia oddzielająca</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menucreate.html"><div><h3>MenuCreate</h3><p>Nowy pasek menu</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menucreatepopup.html"><div><h3>MenuCreatePopup</h3><p>Nowe menu rozwijane bez paska, np. dla przycisku z menu na pasku przycisków; jego polecenia działają jak polecenia paska menu</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="menu/menustyle.html"><div><h3>MenuStyle</h3><p>Rozszerzony styl menu tworzonych od teraz: rysowane przez program, z paskiem na obrazki o boku imageSize (0 zostawia rozmiar); zwraca poprzedni styl</p></div>
+    <span class="entry-category">Menu</span></a>
+<a class="entry-row" href="app/msgerror.html"><div><h3>MsgError</h3><p>Okno błędu z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/msginfo.html"><div><h3>MsgInfo</h3><p>Okno informacji z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/msgwarning.html"><div><h3>MsgWarning</h3><p>Okno ostrzeżenia z przyciskiem OK; title &quot;&quot; bierze tytuł aktywnego okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/msgyesno.html"><div><h3>MsgYesNo</h3><p>Pytanie z przyciskami Tak i Nie; title &quot;&quot; bierze tytuł aktywnego okna; T dla Tak</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+<section id="letter-P" class="letter-group">
+    <h2>P</h2>
+    <div><a class="entry-row" href="kontrolki/panelanchor.html"><div><h3>PanelAnchor</h3><p>Krawędzie okna, do których przypięty jest panel, jako litery L, T, R, B; &quot;LT&quot; bez przypięcia</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/panelcreate.html"><div><h3>PanelCreate</h3><p>Panel na kontrolki jednej części okna, np. modułu programu, w kolorach okna; width i height 0 dają panel na całym oknie między paskami, paskiem stanu i paskiem bocznym, który idzie za rozmiarem okna; WinClose() zamyka panel razem z jego kontrolkami</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="kontrolki/panelsetanchor.html"><div><h3>PanelSetAnchor</h3><p>Przypina panel z własnym rozmiarem do krawędzi okna: L, T, R, B; przeciwne krawędzie rozciągają panel razem z oknem</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="obrazy/picturecreate.html"><div><h3>PictureCreate</h3><p>Obraz z pliku (UTF-8): PNG, BMP, JPEG, GIF albo ICO, najwyżej 4096 x 4096 pikseli; plik bez przezroczystości ma przezroczysty kolor lewego górnego piksela</p></div>
+    <span class="entry-category">Obrazy i ikony</span></a>
+<a class="entry-row" href="widoki/progressbarcreate.html"><div><h3>ProgressBarCreate</h3><p>Pasek postępu z zakresem od 0 do 100; width i height 0 dają 200 x 20</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/progressbarmaximum.html"><div><h3>ProgressBarMaximum</h3><p>Największe położenie</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/progressbarsetmaximum.html"><div><h3>ProgressBarSetMaximum</h3><p>Największe położenie; najmniejsze to zawsze 0</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/progressbarsetvalue.html"><div><h3>ProgressBarSetValue</h3><p>Bieżące położenie od 0 do maksimum</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/progressbarvalue.html"><div><h3>ProgressBarValue</h3><p>Bieżące położenie</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a></div>
+  </section>
+<section id="letter-R" class="letter-group">
+    <h2>R</h2>
+    <div><a class="entry-row" href="kontrolki/radiobuttoncreate.html"><div><h3>RadioButtonCreate</h3><p>Przycisk opcji; przyciski tworzone jeden po drugim tworzą grupę; width i height 0 dają 200 x 20</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="pola/readlastkey.html"><div><h3>ReadLastKey</h3><p>Klawisz, którym skończył się ostatni WinReadModal(): K_ENTER, K_PGDN, K_PGUP albo K_ESC</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a></div>
+  </section>
+<section id="letter-S" class="letter-group">
+    <h2>S</h2>
+    <div><a class="entry-row" href="kontrolki/saycreate.html"><div><h3>SayCreate</h3><p>Tekst w oknie jak @ ... SAY: opis albo, z LabelSetBorder(), wartość z danych; length znaków czcionki 9x18, jak pole GET o length znakach, a bez niego (0) długość tekstu; height 0 daje wysokość pola GET; funkcje jak dla etykiety</p></div>
+    <span class="entry-category">Kontrolki</span></a>
+<a class="entry-row" href="system/set.html"><div><h3>Set</h3><p>Ustawia nową wartość ustawienia i zwraca poprzednią, ważną do następnego wywołania</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="sidebar/sidebaraddaction.html"><div><h3>SidebarAddAction</h3><p>Przycisk z prawej strony nagłówka strony page, widoczny razem ze stroną, z podpowiedzią toolTip (&quot;&quot; bez niej); akcja dostaje pasek i dane data</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebaraddbutton.html"><div><h3>SidebarAddButton</h3><p>Nowa strona: ikona na pasku obrazków i panel pod nagłówkiem; klik na ikonie pokazuje panel, klik na ikonie pokazanej strony go ukrywa; title to nazwa strony w nagłówku, w podpowiedzi ikony i w menu paska, shortcut jak w MenuAdd(); panel z SidebarPanel() bierze kontrolki, sekcje, listę albo menu; zwraca numer strony od 1</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebaraddglobal.html"><div><h3>SidebarAddGlobal</h3><p>Przycisk na dole paska obrazków, np. ustawienia, z podpowiedzią toolTip (&quot;&quot; bez niej); akcja dostaje pasek i dane data</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebaradditem.html"><div><h3>SidebarAddItem</h3><p>Nowy wiersz listy strony page, jak na liście rozszerzeń: obrazek z lewej, tytuł pogrubiony, tekst pod nim i info na dole (&quot;&quot; bez nich); klik na wierszu woła action z paskiem, numerem wiersza i danymi data; lista przewija się, gdy nie mieści się w panelu; zwraca numer wiersza od 1</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebaraddsection.html"><div><h3>SidebarAddSection</h3><p>Nowa sekcja strony page: panel na kontrolki pod nagłówkiem ze strzałką i tytułem title; klik na nagłówku otwiera albo zamyka panel, a otwarte panele dzielą wysokość strony</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarclearitems.html"><div><h3>SidebarClearItems</h3><p>Usuwa wszystkie wiersze listy strony page, np. przed jej nowym wypełnieniem</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarcreate.html"><div><h3>SidebarCreate</h3><p>Pasek boczny bez stron przy lewej krawędzi okna, między paskami u góry i na dole</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarpage.html"><div><h3>SidebarPage</h3><p>Numer pokazanej strony; 0, gdy panel jest ukryty</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarpanel.html"><div><h3>SidebarPanel</h3><p>Panel strony page; kontrolki kładzie się na nim jak na oknie</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetaccentcolor.html"><div><h3>SidebarSetAccentColor</h3><p>Kolor znacznika pokazanej strony i liczników 0xRRGGBB, -1 wraca do koloru zaznaczenia systemu</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetbackground.html"><div><h3>SidebarSetBackground</h3><p>Kolor paneli stron, ich sekcji i nagłówków 0xRRGGBB; na początku kolor paska obrazków</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetbadge.html"><div><h3>SidebarSetBadge</h3><p>Licznik na ikonie strony; 0 go ukrywa</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetbarcolor.html"><div><h3>SidebarSetBarColor</h3><p>Kolor paska obrazków 0xRRGGBB, -1 wraca do koloru domyślnego</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetforeground.html"><div><h3>SidebarSetForeground</h3><p>Kolor tekstu paneli stron, ich sekcji i nagłówków 0xRRGGBB; na początku jasny</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetitemsettings.html"><div><h3>SidebarSetItemSettings</h3><p>Przycisk ustawień z prawej strony info wiersza item; klik na nim woła action jak klik na wierszu</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetmenu.html"><div><h3>SidebarSetMenu</h3><p>Panel strony page pokazuje pozycje menu jedna pod drugą: klik na poleceniu wykonuje je jak w pasku menu, klik na menu rozwijanym otwiera je z prawej strony</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetonchange.html"><div><h3>SidebarSetOnChange</h3><p>Akcja po pokazaniu albo ukryciu strony kliknięciem jej ikony, klawiszem albo krawędzią panelu; pokazaną stronę daje SidebarPage()</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetpage.html"><div><h3>SidebarSetPage</h3><p>Pokazuje stronę page; 0 ukrywa panel</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarsetwidth.html"><div><h3>SidebarSetWidth</h3><p>Szerokość panelu przy 96 DPI, nie mniejsza niż najmniejsza</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="sidebar/sidebarwidth.html"><div><h3>SidebarWidth</h3><p>Szerokość panelu przy 96 DPI</p></div>
+    <span class="entry-category">Pasek boczny</span></a>
+<a class="entry-row" href="widoki/slidercreate.html"><div><h3>SliderCreate</h3><p>Suwak poziomy z zakresem od 0 do 100; width i height 0 dają 200 x 30; przesuwanie woła akcję z ControlSetAction()</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/slidermaximum.html"><div><h3>SliderMaximum</h3><p>Największe położenie</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/sliderminimum.html"><div><h3>SliderMinimum</h3><p>Najmniejsze położenie</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/slidersetmaximum.html"><div><h3>SliderSetMaximum</h3><p>Największe położenie, nie mniejsze od minimum</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/slidersetminimum.html"><div><h3>SliderSetMinimum</h3><p>Najmniejsze położenie, nie większe od maksimum</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/slidersetvalue.html"><div><h3>SliderSetValue</h3><p>Przesuwa suwak w zakresie od minimum do maksimum</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/slidervalue.html"><div><h3>SliderValue</h3><p>Położenie suwaka</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="status/statusbaradd.html"><div><h3>StatusBarAdd</h3><p>Nowy panel; width 0 dzieli z innymi to, co zostaje z paska; panel jest wklęsły, raised robi go wypukłym; pierwszy panel zastępuje jedyny tekst paska, a tekst &quot;&quot; zostawia tekst, który panel już ma; zwraca numer panelu od 1</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="status/statusbarcreate.html"><div><h3>StatusBarCreate</h3><p>Pasek stanu na dole okna z tekstem (w UTF-8); idzie za rozmiarem okna</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="status/statusbarsetbackground.html"><div><h3>StatusBarSetBackground</h3><p>Kolor paska 0xRRGGBB; pasek z własnym kolorem rysuje się sam; -1 wraca do koloru systemowego</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="status/statusbarsetforeground.html"><div><h3>StatusBarSetForeground</h3><p>Kolor tekstu paska 0xRRGGBB, -1 wraca do koloru systemowego</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="status/statusbarsetscoreboard.html"><div><h3>StatusBarSetScoreboard</h3><p>Panel od 1, który w czasie WinReadModal() pokazuje &quot;Ins&quot;, gdy wstawianie jest włączone, jak SET SCOREBOARD; 0 bez niego</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="status/statusbarsettext.html"><div><h3>StatusBarSetText</h3><p>Tekst panelu liczonego od 1; pasek bez paneli ma jeden tekst, panel 1</p></div>
+    <span class="entry-category">Pasek stanu</span></a>
+<a class="entry-row" href="svg/svgarc.html"><div><h3>SvgArc</h3><p>Łuk okręgu piórem; kąty w stopniach, 0 w prawo, 90 w dół</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgcircle.html"><div><h3>SvgCircle</h3><p>Obrys okręgu piórem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgclose.html"><div><h3>SvgClose</h3><p>Kończy rysunek i zamyka plik</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgcomment.html"><div><h3>SvgComment</h3><p>Komentarz w pliku; po &quot;-&quot; przed &quot;-&quot; albo na końcu dochodzi spacja, bo XML nie pozwala na &quot;--&quot; w komentarzu</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgellipse.html"><div><h3>SvgEllipse</h3><p>Obrys elipsy piórem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledcircle.html"><div><h3>SvgFilledCircle</h3><p>Koło wypełnione kolorem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledellipse.html"><div><h3>SvgFilledEllipse</h3><p>Elipsa o promieniach rx w poziomie i ry w pionie wypełniona kolorem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledpath.html"><div><h3>SvgFilledPath</h3><p>Kształt z linii, łuków i krzywych wypełniony kolorem; path to dane ścieżki SVG (M, L, A, Q, C, Z)</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledpie.html"><div><h3>SvgFilledPie</h3><p>Wycinek koła wypełniony kolorem; kąty jak w SvgArc()</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledpolygon.html"><div><h3>SvgFilledPolygon</h3><p>Wielokąt przez punkty { { x, y }, ... } wypełniony kolorem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgfilledrect.html"><div><h3>SvgFilledRect</h3><p>Prostokąt wypełniony kolorem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svginit.html"><div><h3>SvgInit</h3><p>Nowy plik SVG width x height rysowany we współrzędnych od 0 do viewSize; viewSize 0 rysuje w pikselach</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgline.html"><div><h3>SvgLine</h3><p>Linia piórem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgpath.html"><div><h3>SvgPath</h3><p>Obrys ścieżki piórem; path jak w SvgFilledPath()</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgpen.html"><div><h3>SvgPen</h3><p>Pióro do obrysów rysowanych po nim; round daje okrągłe końce i narożniki linii</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgpie.html"><div><h3>SvgPie</h3><p>Obrys wycinka koła piórem; kąty jak w SvgArc()</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgpolygon.html"><div><h3>SvgPolygon</h3><p>Obrys wielokąta przez punkty { { x, y }, ... } piórem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgrect.html"><div><h3>SvgRect</h3><p>Obrys prostokąta piórem</p></div>
+    <span class="entry-category">Zapis SVG</span></a>
+<a class="entry-row" href="svg/svgtext.html"><div><h3>SvgText</h3><p>Tekst w punkcie x, y; align to SVG_ALIGN_LEFT, SVG_ALIGN_CENTER albo SVG_ALIGN_RIGHT</p></div>
+    <span class="entry-category">Zapis SVG</span></a></div>
+  </section>
+<section id="letter-T" class="letter-group">
+    <h2>T</h2>
+    <div><a class="entry-row" href="widoki/tabcontroladdpage.html"><div><h3>TabControlAddPage</h3><p>Nowa zakładka ze stroną; strona to okno, które idzie za rozmiarem zakładek i na którym kładzie się kontrolki</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/tabcontrolcount.html"><div><h3>TabControlCount</h3><p>Liczba stron</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/tabcontrolcreate.html"><div><h3>TabControlCreate</h3><p>Zakładki bez stron; width i height 0 dają 300 x 200; wybór zakładki przez użytkownika woła akcję z ControlSetAction()</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/tabcontrolpage.html"><div><h3>TabControlPage</h3><p>Strona zakładki o numerze position</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/tabcontrolselected.html"><div><h3>TabControlSelected</h3><p>Numer wybranej strony; 0 bez stron</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="widoki/tabcontrolsetselected.html"><div><h3>TabControlSetSelected</h3><p>Wybiera stronę i ją pokazuje</p></div>
+    <span class="entry-category">Zakładki, suwaki i wskaźniki</span></a>
+<a class="entry-row" href="system/timeractive.html"><div><h3>TimerActive</h3><p>T, gdy timer działa</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/timercreate.html"><div><h3>TimerCreate</h3><p>Zatrzymany timer okna; po TimerStart() akcja działa co interval milisekund i dostaje timer i dane data; okno zatrzymuje swoje timery, gdy się zamyka</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/timerinterval.html"><div><h3>TimerInterval</h3><p>Odstęp w milisekundach</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/timersetinterval.html"><div><h3>TimerSetInterval</h3><p>Odstęp w milisekundach; działający timer idzie dalej z nowym odstępem</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/timerstart.html"><div><h3>TimerStart</h3><p>Uruchamia timer</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="system/timerstop.html"><div><h3>TimerStop</h3><p>Zatrzymuje timer</p></div>
+    <span class="entry-category">Ustawienia, daty i pliki</span></a>
+<a class="entry-row" href="toolbar/toolbaradd.html"><div><h3>ToolbarAdd</h3><p>Przycisk z tekstem; klik woła akcję, która dostaje pasek i dane data; zwraca numer przycisku</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbaraddmenu.html"><div><h3>ToolbarAddMenu</h3><p>Przycisk ze strzałką, który otwiera menu rozwijane z MenuCreatePopup() pod przyciskiem, a na pasku na dole nad nim; polecenia menu działają jak polecenia paska menu; zwraca numer przycisku</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbaraddseparator.html"><div><h3>ToolbarAddSeparator</h3><p>Odstęp między przyciskami</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarclear.html"><div><h3>ToolbarClear</h3><p>Usuwa wszystkie przyciski, np. gdy pasek przejmuje inna część programu</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarcreate.html"><div><h3>ToolbarCreate</h3><p>Pasek przycisków przy krawędzi okna side: TOOLBAR_TOP, TOOLBAR_BOTTOM (nad paskiem stanu; przyciski dzielą całą szerokość okna w jednym rzędzie), TOOLBAR_LEFT albo TOOLBAR_RIGHT (między paskami u góry i na dole, przyciski jeden pod drugim z tekstem pod obrazkiem)</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarenable.html"><div><h3>ToolbarEnable</h3><p>Przycisk aktywny albo szary; szary przycisk i jego skrót nic nie robią</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarsetcolor.html"><div><h3>ToolbarSetColor</h3><p>Kolor części paska part (TOOLBAR_FOREGROUND, TOOLBAR_BACKGROUND, TOOLBAR_HOVER..., TOOLBAR_PRESS...) 0xRRGGBB; -1 wraca do koloru systemu; bez żadnego koloru pasek rysuje Windows</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarsetpicture.html"><div><h3>ToolbarSetPicture</h3><p>Obraz przycisku; pierwszy obraz ustala rozmiar obrazów paska, a obraz innego rozmiaru się nie pokaże</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarsetshortcut.html"><div><h3>ToolbarSetShortcut</h3><p>Skrót przycisku jak w MenuAdd(), np. &quot;Ctrl+N&quot;, &quot;Del&quot;, &quot;F2&quot;; działa, gdy pasek jest widoczny, a przycisk aktywny</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="toolbar/toolbarsettooltip.html"><div><h3>ToolbarSetToolTip</h3><p>Podpowiedź przycisku; skrót przycisku pokazuje się po niej w nawiasie</p></div>
+    <span class="entry-category">Pasek narzędzi</span></a>
+<a class="entry-row" href="listy/treeviewadd.html"><div><h3>TreeViewAdd</h3><p>Nowa pozycja na końcu korzenia drzewa; ważna do TreeViewClear()</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewaddchild.html"><div><h3>TreeViewAddChild</h3><p>Nowa pozycja na końcu pozycji parent; ważna do TreeViewClear()</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewclear.html"><div><h3>TreeViewClear</h3><p>Usuwa wszystkie pozycje</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewcollapse.html"><div><h3>TreeViewCollapse</h3><p>Chowa pozycje podrzędne</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewcount.html"><div><h3>TreeViewCount</h3><p>Liczba pozycji</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewcreate.html"><div><h3>TreeViewCreate</h3><p>Drzewo tekstów; width i height 0 dają 200 x 200; wybór przez użytkownika woła akcję z ControlSetAction(), podwójny klik akcję z ControlSetDoubleClick()</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewexpand.html"><div><h3>TreeViewExpand</h3><p>Pokazuje pozycje podrzędne</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewitemtext.html"><div><h3>TreeViewItemText</h3><p>Tekst pozycji, ważny do następnego wywołania dla tej kontrolki</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewselected.html"><div><h3>TreeViewSelected</h3><p>Wybrana pozycja; NULL, gdy nic nie jest wybrane</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewsetitemtext.html"><div><h3>TreeViewSetItemText</h3><p>Zmienia tekst pozycji</p></div>
+    <span class="entry-category">Listy i drzewa</span></a>
+<a class="entry-row" href="listy/treeviewsetselected.html"><div><h3>TreeViewSetSelected</h3><p>Wybiera pozycję; NULL czyści wybór</p></div>
+    <span class="entry-category">Listy i drzewa</span></a></div>
+  </section>
+<section id="letter-W" class="letter-group">
+    <h2>W</h2>
+    <div><a class="entry-row" href="app/winbackground.html"><div><h3>WinBackground</h3><p>Kolor tła okna 0xRRGGBB, -1 dla koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/wincenter.html"><div><h3>WinCenter</h3><p>Ustawia okno na środku obszaru roboczego jego ekranu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winclose.html"><div><h3>WinClose</h3><p>Zamyka okno jak przycisk zamknięcia, po zgodzie z WinSetOnClose(); zamknięcie głównego okna kończy AppRun()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/wincreate.html"><div><h3>WinCreate</h3><p>Tworzy ukryte okno z obszarem roboczym width x height pikseli logicznych; pierwsze okno aplikacji jest głównym; NULL dla rozmiaru mniejszego od 1</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="pola/winendread.html"><div><h3>WinEndRead</h3><p>Kończy trwający WinReadModal() jak PgDn (save T) albo Esc (F), np. z przycisków Zapisz i Anuluj</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="app/winfocusnext.html"><div><h3>WinFocusNext</h3><p>Przenosi fokus do następnej kontrolki w kolejności Tab, z previous do poprzedniej</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winforeground.html"><div><h3>WinForeground</h3><p>Kolor tekstu okna 0xRRGGBB, -1 dla koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winheight.html"><div><h3>WinHeight</h3><p>Wysokość obszaru roboczego w pikselach logicznych</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winhide.html"><div><h3>WinHide</h3><p>Ukrywa okno bez zamykania</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="pola/winreadmodal.html"><div><h3>WinReadModal</h3><p>Użytkownik wypełnia pola okna jak w ReadModal(): pola są edytowalne tylko w czasie odczytu, tabele, paski i menu czekają; Enter przechodzi do następnego pola, Enter na ostatnim polu, PgDn i PgUp kończą odczyt z zapisem po sprawdzeniu pola, Esc bez zapisu; z gets (count pól edycji, pól wyboru i przycisków opcji) tylko te pola biorą udział, w tej kolejności, a count 0 bierze wszystkie pola jednowierszowe okna; first to numer pola od 1, w którym zaczyna się edycja (0 = pierwsze widoczne); po zapisie pola GET wpisują wartości do swoich zmiennych</p></div>
+    <span class="entry-category">Pola edycji i formularze</span></a>
+<a class="entry-row" href="app/winremovecontextmenu.html"><div><h3>WinRemoveContextMenu</h3><p>Okno bez menu podręcznego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winremovekey.html"><div><h3>WinRemoveKey</h3><p>Usuwa klawisz z WinSetKey()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetbackground.html"><div><h3>WinSetBackground</h3><p>Kolor tła okna 0xRRGGBB, -1 wraca do koloru systemowego</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetcontextmenu.html"><div><h3>WinSetContextMenu</h3><p>Menu podręczne okna z MenuCreatePopup(), otwierane prawym przyciskiem myszy albo klawiszem menu, także nad kontrolkami bez własnego menu podręcznego; jego polecenia działają jak polecenia paska menu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetforeground.html"><div><h3>WinSetForeground</h3><p>Kolor tekstu etykiet, ramek, pól wyboru i przycisków opcji okna 0xRRGGBB bez własnego koloru; -1 wraca do koloru systemowego; pola edycji zachowują swoje kolory</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetheight.html"><div><h3>WinSetHeight</h3><p>Nowa wysokość obszaru roboczego w pikselach logicznych; wartość mniejsza od 1 nic nie zmienia</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winseticon.html"><div><h3>WinSetIcon</h3><p>Ikona okna z pliku .ico (ścieżka w UTF-8); brak pliku zostawia ikonę programu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetkey.html"><div><h3>WinSetKey</h3><p>Akcja pod klawiszem key w oknie i w jego kontrolkach, jak SetKey(); klawisz jak w MenuAdd() (&quot;PgDn&quot;, &quot;Esc&quot;, &quot;Enter&quot;, &quot;Ctrl+S&quot;); ma pierwszeństwo przed skrótami menu i pasków, ale czeka w czasie WinReadModal(); klawisz już ustawiony dostaje nową akcję; F dla nieznanego klawisza</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetmenu.html"><div><h3>WinSetMenu</h3><p>Pasek menu okna; okno rośnie, żeby obszar roboczy zachował rozmiar</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetonclose.html"><div><h3>WinSetOnClose</h3><p>Zgoda na zamknięcie okna przyciskiem zamknięcia, Alt+F4 albo WinClose(): valid dostaje okno i dane data, a F zostawia okno otwarte, np. po pytaniu MsgYesNo()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetonresize.html"><div><h3>WinSetOnResize</h3><p>Akcja po zmianie rozmiaru obszaru roboczego; nowy rozmiar dają WinWidth() i WinHeight()</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetsizable.html"><div><h3>WinSetSizable</h3><p>Pozwala zmieniać rozmiar okna myszą i pokazać je na całym ekranie; obszar roboczy zachowuje rozmiar, a kontrolki idą za swoimi kotwicami</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetstate.html"><div><h3>WinSetState</h3><p>Stan okna WIN_NORMAL, WIN_MAXIMIZED, WIN_MINIMIZED albo WIN_FULLSCREEN; ukryte okno pokaże się w tym stanie; zwraca poprzedni stan</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsettitle.html"><div><h3>WinSetTitle</h3><p>Nowy tytuł okna</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsetwidth.html"><div><h3>WinSetWidth</h3><p>Nowa szerokość obszaru roboczego w pikselach logicznych; wartość mniejsza od 1 nic nie zmienia</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winshow.html"><div><h3>WinShow</h3><p>Pokazuje okno w jego stanie (normalne, zmaksymalizowane, zminimalizowane, pełny ekran)</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winsizable.html"><div><h3>WinSizable</h3><p>T, gdy użytkownik może zmieniać rozmiar okna myszą i pokazać je na całym ekranie</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/wintitle.html"><div><h3>WinTitle</h3><p>Tytuł okna w UTF-8, ważny do następnej zmiany tytułu</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a>
+<a class="entry-row" href="app/winwidth.html"><div><h3>WinWidth</h3><p>Szerokość obszaru roboczego w pikselach logicznych</p></div>
+    <span class="entry-category">Aplikacja i okna</span></a></div>
+  </section>
+      <footer class="site-footer">
+        <span>Copyright © 2024-2026 xWGUI Developments</span>
+        <span>Created by the xDev community.</span>
+      </footer>
+    </main>
+  </div>
+  <div class="menu-backdrop" hidden></div>
+  <dialog class="search-dialog" aria-labelledby="search-label">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <label class="sr-only" for="doc-search" id="search-label">Szukaj w dokumentacji</label>
+      <input id="doc-search" type="search" placeholder="Nazwa funkcji lub fragment opisu…" autocomplete="off" spellcheck="false" autofocus>
+      <button class="close-search" type="button" aria-label="Zamknij wyszukiwanie">Esc</button>
+    </div>
+    <div class="search-filters">
+      <label for="search-category">Kategoria</label>
+      <select id="search-category"><option value="">Wszystkie kategorie</option><option value="app">Aplikacja i okna</option><option value="kontrolki">Kontrolki</option><option value="pola">Pola edycji i formularze</option><option value="listy">Listy i drzewa</option><option value="browse">Tabele rekordów</option><option value="widoki">Zakładki, suwaki i wskaźniki</option><option value="menu">Menu</option><option value="toolbar">Pasek narzędzi</option><option value="status">Pasek stanu</option><option value="sidebar">Pasek boczny</option><option value="obrazy">Obrazy i ikony</option><option value="system">Ustawienia, daty i pliki</option><option value="svg">Zapis SVG</option></select>
+    </div>
+    <p class="search-status" role="status"></p>
+    <ul class="search-results"></ul>
+  </dialog>
+  <div class="toast" role="status"></div>
+</body>
+</html>

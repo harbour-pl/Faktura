@@ -1,0 +1,12 @@
+# XWGUI
+*.a
+*.dbf
+*.dll
+*.exe
+obj
+src
+tmp
+.vscode
+# Gotowe biblioteki w lib/ idą do repozytorium: DLL i biblioteki importu
+!lib/*.dll
+!lib/*.dll.a
